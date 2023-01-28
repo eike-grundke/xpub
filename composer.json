@@ -1,0 +1,33 @@
+{
+  "name": "eike-grundke/xpub",
+  "version": "1.0.0",
+  "description": "Derivation of extended public keys, for BTC and ETH network",
+  "keywords": [
+    "bitcoin",
+    "ethereum",
+    "address",
+    "derivation",
+    "xpub"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eike Grundke",
+      "email": "me@eikegrundke.de"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-bcmath": "*",
+    "simplito/elliptic-php": "^1.0",
+    "stephenhill/base58": "^1.1",
+    "kornrunner/keccak": "^1.0",
+    "bitwasp/bech32": "^0.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grundke\\": "src/"
+    }
+  }
+}
