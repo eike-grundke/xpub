@@ -20,14 +20,14 @@ composer require eike-grundke/xpub
 ```php
 use Grundke\ExtendedPublicKey;
 use Grundke\Enum\CoinEnum;
-use Grundke\Enum\BipEnmum;
+use Grundke\Enum\BipEnum;
 
 $xPub = ExtendedPublicKey::fromString('xpub...' ; // bip44
 $xPub = ExtendedPublicKey::fromString('zpub...'); // bip84 (native SegWit)
 
 // explicit bip
-$xPub = ExtendedPublicKey::fromString('xpub...', BipEnmum::BIP84);
-$xPub = ExtendedPublicKey::fromString('zpub...', BipEnmum::BIP44);
+$xPub = ExtendedPublicKey::fromString('xpub...', BipEnum::BIP84);
+$xPub = ExtendedPublicKey::fromString('zpub...', BipEnum::BIP44);
 
 $xPubFromIndex = $xPub->derive($i);
 $xPubFromIndices = $xpub->derive([$i1, $i2]);
